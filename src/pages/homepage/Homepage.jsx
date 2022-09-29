@@ -8,6 +8,8 @@ import Nav from "../../components/nav/Nav";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxSprites from "./ParallaxSprites";
 import Line from "./Line";
+import Mobile from "./Mobile";
+import { Model } from "../../assets/models/Model";
 
 export default function Homepage({ scroll }) {
   const [topOffset, setTopOffset] = useState(0);
@@ -37,6 +39,8 @@ export default function Homepage({ scroll }) {
         <div ref={ref1} className="projects">
           <h2>Projects</h2>
         </div>
+        <Mobile />
+        {/* <Model /> */}
         {/* <ParallaxSprites height={height + topOffset} topOffset={0} /> */}
       </div>
     </ParallaxProvider>

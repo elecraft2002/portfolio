@@ -1,0 +1,9 @@
+.line {
+  width: 3px;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  background-color: var(--dark);
+  left: 50%;
+  transform: translate(-50%);
+}

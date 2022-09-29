@@ -1,7 +1,9 @@
 .info {
   max-width: calc(1000px + 2rem);
   text-align: center;
+  position: relative;
   margin: auto;
+  background: var(--light);
 }
 .info__container {
   margin: 1rem;
@@ -11,4 +13,26 @@
   .info__container {
     margin: 3rem;
   }
+}
+.info__square__container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.info__square {
+  width: 20vw;
+  max-width: 120px;
+  aspect-ratio: 1;
+  border: 3px var(--dark) solid;
+  position: relative;
+}
+.info__square::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  height: 100%;
+  background: var(--light);
+  left: -3px;
+  transform: translateY(100%);
+  border-top: 2px var(--dark) solid;
 }

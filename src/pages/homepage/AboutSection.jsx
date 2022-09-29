@@ -27,7 +27,9 @@ export default function AboutSection() {
           </div>
         </div>
         <button className="button">Více</button>
-        <Triangle className="about__triangle" />
+        <Parallax translateY={["-30px", "20px"]} rotate={[10,30]} className="about__triangle">
+          <Triangle className="about__triangle"/>
+        </Parallax>
       </div>
     </div>
   );

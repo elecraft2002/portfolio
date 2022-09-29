@@ -95,6 +95,7 @@ h2 {
   color: var(--light);
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .projects h2{
   letter-spacing: 1rem;

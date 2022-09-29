@@ -6,7 +6,7 @@ export default function Info() {
   return (
     <>
       <div className="info__square__container">
-        <Parallax rotate={[-20, 20]} translateY={["-10px", "50px"]}>
+        <Parallax rotate={[-20, 20]} translateY={["-10px", "26px"]}>
           <div className="info__square"></div>
         </Parallax>
       </div>

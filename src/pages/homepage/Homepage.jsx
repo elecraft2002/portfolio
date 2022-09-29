@@ -9,21 +9,22 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxSprites from "./ParallaxSprites";
 import Line from "./Line";
 
-export default function Homepage() {
-  /* const ref1 = useRef(null);
-  const [height, setHeight] = useState(0);
+export default function Homepage({ scroll }) {
   const [topOffset, setTopOffset] = useState(0);
+  const ref1 = useRef(null);
+  const [height, setHeight] = useState(0);
   useEffect(() => {
     console.log(ref1);
     setHeight(ref1.current.clientHeight);
     setTopOffset(ref1.current.offsetTop);
-  }, [window.screen.width]); */
+  }, [window.screen.width]);
+  //console.log(scroll, topOffset);
   return (
     <ParallaxProvider>
       <div style={{ height: "500vh" }}>
         <Nav />
-        <Line />
-        <div /* ref={ref1} */>
+        {scroll <= topOffset ? <Line /> : null}
+        <div>
           <div className="top_section">
             <Logo />
             <div className="scroll_icon--fadeIn">
@@ -33,7 +34,7 @@ export default function Homepage() {
           <AboutSection />
           <Info />
         </div>
-        <div className="projects">
+        <div ref={ref1} className="projects">
           <h2>Projects</h2>
         </div>
         {/* <ParallaxSprites height={height + topOffset} topOffset={0} /> */}

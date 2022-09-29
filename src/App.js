@@ -20,6 +20,7 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Homepage scroll={scroll} />} />
+      <Route path='/portfolio' element={<Homepage scroll={scroll} />} />
       <Route path='*' element={"Error"} />
     </Routes>
   );

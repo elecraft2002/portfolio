@@ -1,0 +1,9 @@
+.parallax_sprites {
+  position: absolute;
+  width: 100vw;
+}
+.parallax_sprite {
+  position: absolute;
+  top: 0;
+  opacity: .5;
+}

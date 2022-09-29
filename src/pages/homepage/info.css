@@ -1,0 +1,14 @@
+.info {
+  max-width: calc(1000px + 2rem);
+  text-align: center;
+  margin: auto;
+}
+.info__container {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .info__container {
+    margin: 3rem;
+  }
+}

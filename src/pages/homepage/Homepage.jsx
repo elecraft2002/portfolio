@@ -14,7 +14,7 @@ export default function Homepage({ scroll }) {
   const ref1 = useRef(null);
   const [height, setHeight] = useState(0);
   useEffect(() => {
-    console.log(ref1);
+    //console.log(ref1);
     setHeight(ref1.current.clientHeight);
     setTopOffset(ref1.current.offsetTop);
   }, [window.screen.width]);

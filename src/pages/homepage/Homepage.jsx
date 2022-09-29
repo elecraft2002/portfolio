@@ -33,6 +33,9 @@ export default function Homepage() {
           <AboutSection />
           <Info />
         </div>
+        <div className="projects">
+          <h2>Projects</h2>
+        </div>
         {/* <ParallaxSprites height={height + topOffset} topOffset={0} /> */}
       </div>
     </ParallaxProvider>

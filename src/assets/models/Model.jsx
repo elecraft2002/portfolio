@@ -7,7 +7,6 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import image from "../imgs/vojtik.webp";
 import { useLoader } from "@react-three/fiber/dist/react-three-fiber.cjs";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
-import { UVMapping } from "three";
 
 export function Model(props) {
   //const [texture] = useTexture([image])

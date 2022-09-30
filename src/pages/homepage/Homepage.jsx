@@ -9,11 +9,11 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import ParallaxSprites from "./ParallaxSprites";
 import Line from "./Line";
 import Mobile from "./Mobile";
-import { Model } from "../../assets/models/Model";
 
 export default function Homepage({ scroll }) {
   const [topOffset, setTopOffset] = useState(0);
   const ref1 = useRef(null);
+  const ref = useRef(null);
   const [height, setHeight] = useState(0);
   useEffect(() => {
     //console.log(ref1);

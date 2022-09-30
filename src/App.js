@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Homepage from './pages/homepage/Homepage';
-import Scroll from './functions/Scroll';
 function App() {
   //Parallax provider
   const [scroll, setScrollOffset] = useState(0)

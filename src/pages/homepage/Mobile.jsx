@@ -20,7 +20,7 @@ export default function Mobile() {
           </group>
         </Stage>
       </Suspense>
-      {/* <OrbitControls ref={ref} autoRotate /> */}
+      <OrbitControls ref={ref} />
     </Canvas>
   );
 }

@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  --dark: #0d1b2a;
+  --light: #fff;
+  overflow-x: hidden;
+  background: var(--light);
+  color: var(--dark);
+}
+html {
+  overflow-x: hidden;
+}

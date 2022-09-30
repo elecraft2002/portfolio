@@ -1,0 +1,22 @@
+.line {
+  width: 3px;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  background-color: var(--dark);
+  left: 50%;
+  transform: translate(-50%);
+}
+.line::after {
+  content: "";
+  position: absolute;
+  width: .5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--light);
+  border: 2px solid var(--dark);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}

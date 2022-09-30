@@ -1,0 +1,44 @@
+.info {
+  max-width: calc(1000px + 2rem);
+  text-align: center;
+  position: relative;
+  margin: auto;
+  background: var(--light);
+}
+.info__container {
+  margin: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 25vh;
+}
+.info p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .info__container {
+    margin: 3rem;
+    margin-bottom: 0;
+  }
+}
+.info__square__container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.info__square {
+  width: 20vw;
+  max-width: 120px;
+  aspect-ratio: 1;
+  border: 3px var(--dark) solid;
+  position: relative;
+}
+.info__square::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 6px);
+  height: 50%;
+  background: var(--light);
+  left: -3px;
+  transform: translateY(200%);
+  border-top: 1.5px var(--light) solid;
+}

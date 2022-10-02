@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://elecraft2002.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.32.4",
@@ -45,5 +46,6 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

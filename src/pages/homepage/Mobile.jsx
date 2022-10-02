@@ -4,7 +4,9 @@ import { OrbitControls, Stage } from "@react-three/drei";
 import { Model } from "../../assets/models/Model";
 import "./mobile.css";
 
-export default function Mobile() {
+export default function Mobile({ isVisible, topOffset, scroll }) {
+  //const { height, width } = useThree((state) => state.viewport)
+
   const ref = useRef();
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ fov: 50 }}>
@@ -16,7 +18,7 @@ export default function Mobile() {
           environment="city"
         >
           <group position={[0, 0, 0]} rotation={[0, 3.14, 0]}>
-            <Model />
+            <Model isVisible={isVisible} />
           </group>
         </Stage>
       </Suspense>

@@ -88,16 +88,3 @@ h2 {
     right: inherit;
   }
 }
-.projects {
-  width: 100vw;
-  height: 100vh;
-  background: var(--dark);
-  color: var(--light);
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.projects h2{
-  letter-spacing: 1rem;
-  margin-top: 20vh;
-}

@@ -1,6 +1,7 @@
 .about {
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 .about__container {
   max-width: 1000px;

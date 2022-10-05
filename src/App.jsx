@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Homepage from './pages/homepage/Homepage';
+import Projects from './pages/homepage/Projects';
 function App() {
   //Parallax provider
   const [scroll, setScrollOffset] = useState(0)
@@ -20,6 +21,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Homepage scroll={scroll} />} />
       <Route path='/portfolio' element={<Homepage scroll={scroll} />} />
+      <Route path='/projects' element={<Projects scroll={scroll} />} />
       <Route path='*' element={"Error"} />
     </Routes>
   );

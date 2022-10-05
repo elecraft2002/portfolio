@@ -29,26 +29,24 @@ export default function Homepage({ scroll }) {
   //console.log(scroll, topOffset);
   return (
     <ParallaxProvider>
-      <div style={{ height: "500vh" }}>
-        <Nav />
-        {scroll <= topOffset ? <Line /> : null}
-        <div>
-          <div className="top_section">
-            <Logo />
-            <div className="scroll_icon--fadeIn">
-              <ScrollIcon className="scroll_icon" />
-            </div>
+      <Nav />
+      {scroll <= topOffset ? <Line /> : null}
+      <div>
+        <div className="top_section">
+          <Logo />
+          <div className="scroll_icon--fadeIn">
+            <ScrollIcon className="scroll_icon" />
           </div>
-          <AboutSection />
-          <Info />
         </div>
-        <div ref={ref1}>
-          <Projects
-            isVisible={useIsInViewport(ref1)}
-            topOffset={mobileTopOffset}
-            scroll={scroll}
-          />
-        </div>
+        <AboutSection />
+        <Info />
+      </div>
+      <div ref={ref1}>
+        <Projects
+          isVisible={useIsInViewport(ref1)}
+          topOffset={topOffset}
+          scroll={scroll}
+        />
       </div>
     </ParallaxProvider>
   );

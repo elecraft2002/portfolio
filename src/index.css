@@ -8,6 +8,3 @@ body {
   background: var(--light);
   color: var(--dark);
 }
-html {
-  overflow-x: hidden;
-}

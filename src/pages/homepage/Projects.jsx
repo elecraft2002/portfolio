@@ -2,6 +2,7 @@ import React from "react";
 import Mobile from "./Mobile";
 import "./projects.css";
 import { transformBetween } from "../../functions/values";
+import ProjectSection from "./ProjectSection";
 
 export default function Projects({ isVisible, topOffset, scroll }) {
   const frame = scroll - topOffset;
@@ -17,6 +18,13 @@ export default function Projects({ isVisible, topOffset, scroll }) {
         <div /* ref={ref2} */ className="mobile">
           <Mobile isVisible={isVisible} topOffset={topOffset} scroll={scroll} />
         </div>
+        <ul>
+          <ProjectSection />
+          <ProjectSection />
+          <ProjectSection />
+          <ProjectSection />
+          <ProjectSection />
+        </ul>
       </div>
     </div>
   );

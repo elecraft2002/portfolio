@@ -1,6 +1,5 @@
 .projects__container {
-  height: 500vh;
-
+  min-height: 200vh;
 }
 
 .projects__transition {

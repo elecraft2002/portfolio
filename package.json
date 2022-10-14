@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://elecraft2002.github.io/portfolio",
+  "homepage": "https://elecraft2002.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@react-spring/three": "^9.5.5",
@@ -32,7 +32,7 @@
   },
   "eslintConfig": {
     "extends": [ 
-      
+
       "react-app",
       "react-app/jest"
     ]

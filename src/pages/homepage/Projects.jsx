@@ -4,6 +4,7 @@ import "./projects.css";
 import { transformBetween } from "../../functions/values";
 import ProjectSection from "./ProjectSection";
 import Wipe from "./Wipe";
+import ParallaxSprites from "./ParallaxSprites";
 
 export default function Projects({ isVisible, topOffset, scroll }) {
   const frame = scroll - topOffset;
@@ -28,6 +29,7 @@ export default function Projects({ isVisible, topOffset, scroll }) {
         </div>
       ) : null}
       <div className="projects__container">
+        {/* <ParallaxSprites height={height} topOffset={topOffset} /> */}
         <div /* ref={ref2} */ className="mobile">
           <Wipe topOffset={topOffset} scroll={scroll} height={height} />
           <Mobile

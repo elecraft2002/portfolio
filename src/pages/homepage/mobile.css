@@ -4,3 +4,18 @@
   height: 100vh;
   top: 0;
 }
+.wipe {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  left: -210vw;
+  transition: .2s;
+}
+.wipe svg path {
+  width: 100%;
+  height: 100%;
+  fill: var(--dark);
+  opacity: 0.1;
+}
+

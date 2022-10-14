@@ -10,6 +10,7 @@ import ParallaxSprites from "./ParallaxSprites";
 import Line from "./Line";
 import { useIsInViewport } from "../../functions/Viewport";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 export default function Homepage({ scroll }) {
   //console.log(scroll);
@@ -48,6 +49,7 @@ export default function Homepage({ scroll }) {
           scroll={scroll}
         />
       </div>
+      <Contact />
     </ParallaxProvider>
   );
 }

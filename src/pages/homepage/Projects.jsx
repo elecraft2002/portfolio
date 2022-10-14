@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Mobile from "./Mobile";
 import "./projects.css";
 import { transformBetween } from "../../functions/values";
 import ProjectSection from "./ProjectSection";
+import Wipe from "./Wipe";
 
 export default function Projects({ isVisible, topOffset, scroll }) {
   const frame = scroll - topOffset;
   const opacity = transformBetween([0, window.innerHeight / 2], [1, 0], frame);
+  const projects = ["", "", "", "", "", ""];
+  const [sections, setSections] = useState([]);
+  const [height, setHeight] = useState([]);
+  const list = useRef(null);
+  useEffect(() => {
+    setSections(() => {
+      return [...list.current.children].map((el) => {
+        return el.offsetTop;
+      });
+    });
+    setHeight(list.current.clientHeight);
+  }, [window.innerWidth]);
   return (
     <div className="projects">
       {opacity ? (
@@ -16,15 +29,27 @@ export default function Projects({ isVisible, topOffset, scroll }) {
       ) : null}
       <div className="projects__container">
         <div /* ref={ref2} */ className="mobile">
-          <Mobile isVisible={isVisible} topOffset={topOffset} scroll={scroll} />
+          <Wipe topOffset={topOffset} scroll={scroll} height={height} />
+          <Mobile
+            isVisible={isVisible}
+            topOffset={topOffset}
+            scroll={scroll}
+            sections={sections}
+          />
         </div>
-        <ul>
-          <ProjectSection />
-          <ProjectSection />
-          <ProjectSection />
-          <ProjectSection />
-          <ProjectSection />
+        <ul className="projects__list" ref={list}>
+          {projects.map((projects, i) => {
+            return (
+              <ProjectSection
+                key={i}
+                id={i}
+                setSections={setSections}
+                sections={sections}
+              />
+            );
+          })}
         </ul>
+        <button className="button button--projects">Více projektů</button>
       </div>
     </div>
   );

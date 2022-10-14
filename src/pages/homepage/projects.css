@@ -21,3 +21,77 @@
   letter-spacing: 1rem;
   margin-top: 20vh;
 }
+.project__description__container {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  align-items: center;
+  grid-template-areas: "project__description--left project__description--right";
+}
+
+.project__description__container:nth-child(2n) .project__description {
+  grid-area: project__description--right;
+}
+.project__description__container:nth-child(2n-1) .project__description h3 {
+  text-align: end;
+}
+.project__description__container:nth-child(2n-1) .project__description .button {
+  margin-right: 0;
+  margin-left: auto;
+}
+.project__description__container:nth-child(2n) .project__description .button {
+  margin-right: auto;
+  margin-left: 0;
+}
+/* .project__description__container:first-of-type {
+  background-color: red;
+}
+ */
+.projects__list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  margin-top: 50vh;
+  /*  position: relative; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+} /* 
+.project__description__container:nth-child(2n) {
+  background-color: blue;
+} */
+.project__description {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.project__sprite {
+  font-size: 10rem;
+  transform-origin: left;
+  height: 10rem;
+  position: absolute;
+  width: 10rem;
+}
+.project__sprite span {
+  transform: translate(50%, 50%);
+  transform-origin: left;
+}
+.project__description h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  margin: 0;
+}
+.button--projects {
+  margin: 1rem;
+  position: relative;
+  left: 50vw;
+  transform: translate(-50%);
+}
+.button--projects:hover {
+  left: 50vw;
+  transform: translate(-50%);
+}

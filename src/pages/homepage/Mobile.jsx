@@ -10,18 +10,18 @@ import { Model } from "../../assets/models/Model";
 import * as THREE from "three";
 import "./mobile.css";
 import { transformBetween } from "../../functions/values";
-softShadows({
+/* softShadows({
   frustum: 3.75,
   size: 0.005,
   near: 9.5,
   samples: 17,
   rings: 11, // Rings (default: 11) must be a int
-});
-export default function Mobile({ isVisible, topOffset, scroll }) {
+}); */
+export default function Mobile({ isVisible, topOffset, scroll, sections }) {
   const ref = useRef(null);
   const [mousePosition, setMousePosition] = useState([
-    window.innerWidth/2,
-    window.innerHeight/2,
+    window.innerWidth / 2,
+    window.innerHeight / 2,
   ]);
   //const { height, width } = useThree((state) => state.viewport)
   const updateMousePosition = (e) => {
@@ -52,6 +52,7 @@ export default function Mobile({ isVisible, topOffset, scroll }) {
             topOffset={topOffset}
             scroll={scroll}
             mousePosition={mousePosition}
+            sections={sections}
           />
         </group>
         <Environment preset="city" />

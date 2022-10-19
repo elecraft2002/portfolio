@@ -5,6 +5,7 @@ import { transformBetween } from "../../functions/values";
 import ProjectSection from "./ProjectSection";
 import Wipe from "./Wipe";
 import ParallaxSprites from "./ParallaxSprites";
+import Pipe from "./Pipe";
 
 export default function Projects({ isVisible, topOffset, scroll }) {
   const frame = scroll - topOffset;
@@ -31,7 +32,7 @@ export default function Projects({ isVisible, topOffset, scroll }) {
       <div className="projects__container">
         {/* <ParallaxSprites height={height} topOffset={topOffset} /> */}
         <div /* ref={ref2} */ className="mobile">
-          <Wipe topOffset={topOffset} scroll={scroll} height={height} />
+          {/* <Wipe topOffset={topOffset} scroll={scroll} height={height} /> */}
           <Mobile
             isVisible={isVisible}
             topOffset={topOffset}
@@ -39,6 +40,7 @@ export default function Projects({ isVisible, topOffset, scroll }) {
             sections={sections}
           />
         </div>
+        <Pipe />
         <ul className="projects__list" ref={list}>
           {projects.map((projects, i) => {
             return (
@@ -47,6 +49,7 @@ export default function Projects({ isVisible, topOffset, scroll }) {
                 id={i}
                 setSections={setSections}
                 sections={sections}
+                frame={frame}
               />
             );
           })}

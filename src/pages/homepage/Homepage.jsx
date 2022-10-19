@@ -31,7 +31,7 @@ export default function Homepage({ scroll }) {
   return (
     <ParallaxProvider>
       <Nav />
-      {scroll <= topOffset ? <Line /> : null}
+      {scroll <= topOffset ? <Line /> : <Line /> /* null */}
       <div>
         <div className="top_section">
           <Logo />

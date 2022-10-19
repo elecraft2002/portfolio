@@ -1,16 +1,23 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Parallax } from "react-scroll-parallax";
 
-export default function ProjectSection({ id, setSections, sections }) {
-  /*   const section = useRef(null);
-  const [topOffset, setTopOffset] = useState(0);
+export default function ProjectSection({ id, setSections, sections, frame }) {
+  const section = useRef(null);
+  const [isActive, setActiveState] = useState(0);
   useEffect(() => {
-    setSections((sections) => [...sections, section.current.offsetTop]);
-    console.log(sections);
-  }, []); */
+    //console.log(section.current.offsetTop > frame + window.innerHeight / 2);
+    setActiveState(section.current.offsetTop < frame + window.innerHeight / 2);
+  }, [window.innerWidth, frame]);
   return (
     <li className="project__description__container">
-      <section className="project__description">
+      <section
+        ref={section}
+        className={
+          "project__description " + (isActive
+            ? "project__description--active"
+            : "")
+        }
+      >
         <h3>Tablo L4</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem

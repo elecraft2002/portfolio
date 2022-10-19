@@ -22,7 +22,7 @@
 }
 .info__square__container {
   position: absolute;
-  left: 50%;
+  left: 50vw;
   transform: translate(-50%, -100%);
 }
 .info__square {

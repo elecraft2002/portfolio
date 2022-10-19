@@ -5,7 +5,7 @@ import image2 from "../imgs/klarka.jpg";
 import image3 from "../imgs/vojtik.webp";
 import image4 from "../imgs/strahov.jpg";
 import image5 from "../imgs/tablo.jpg";
-import image6 from "../imgs/klarka.jpg";
+import image6 from "../imgs/wimhof.png";
 import { useLoader } from "@react-three/fiber/dist/react-three-fiber.cjs";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import * as THREE from "three";
@@ -110,7 +110,6 @@ export function Model({
   }, [frame]);
 
   useEffect(() => {
-    console.log("Změna");
     const imgRatio =
       textures[section].image.width / textures[section].image.height;
     const planeRatio = 9 / 19.5;

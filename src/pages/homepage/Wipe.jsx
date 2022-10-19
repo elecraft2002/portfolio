@@ -9,14 +9,14 @@ export default function Wipe({ topOffset, scroll, height }) {
     setPosition(
       transformBetween(
         [window.innerHeight, height - window.innerHeight],
-        [0, window.innerWidth * 3],
+        [-3 * window.innerWidth, window.innerWidth],
         frame
       )
     );
   }, [frame, window.innerWidth]);
   return (
-    <div style={{ transform: `translate(${position}px)` }} className="wipe">
-      <WipeSVG />
+    <div className="wipe">
+      <WipeSVG style={{ transform: `translate(${position}px)` }} />
     </div>
   );
 }

@@ -1,0 +1,42 @@
+.pipe__top {
+  height: 120vh;
+  background-color: var(--light);
+  width: 20px;
+  display: block;
+  margin: auto;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  transform: translate(-50%);
+}
+
+.pipe__circle {
+  --radius: 10vw;
+  --stroke: 3px;
+  position: absolute;
+  top: 120vh;
+  left: 50vw;
+  width: var(--radius);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: solid var(--dark) var(--stroke);
+  transform: translateY(calc(var(--stroke) * -1)) translateX(-50%);
+  /* translateX(calc(-10vw + 3px)) */
+  z-index: -10;
+}
+.pipe__circle--mask {
+  --radius: 10vw;
+  --stroke: 3px;
+  position: absolute;
+  top: 120vh;
+  left: 50vw;
+  content: "";
+  width: var(--radius);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: solid var(--dark) var(--stroke);
+  transform: translateY(calc(var(--stroke) * -1)) translateX(-50%);
+  border-bottom: none;
+  z-index: -1;
+}

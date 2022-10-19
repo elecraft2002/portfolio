@@ -27,7 +27,7 @@ h2 {
   margin: 0 auto;
   animation-duration: 1s;
   animation-delay: 0.5s;
-  transform: translateY(25px);
+  transform: translateY(25px) translateX(50%);
 }
 @keyframes fadeInScroll {
   0% {

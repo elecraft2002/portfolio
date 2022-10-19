@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ddaf9128.css",
-    "main.js": "/portfolio/static/js/main.8866f42c.js",
+    "main.css": "/portfolio/static/css/main.32d79c84.css",
+    "main.js": "/portfolio/static/js/main.364f72c5.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/klarka.jpg": "/portfolio/static/media/klarka.facbe17cad2b3f0b7126.jpg",
     "static/media/three.cjs": "/portfolio/static/media/three.f8accc5c0ec37763a1e1.cjs",
+    "static/media/wimhof.png": "/portfolio/static/media/wimhof.c9bc71435336a4f5d4f6.png",
     "static/media/tablo.jpg": "/portfolio/static/media/tablo.cbabed33b37d992d8159.jpg",
     "static/media/strahov.jpg": "/portfolio/static/media/strahov.20ccc4a17cfadb850a66.jpg",
     "static/media/vojtik.webp": "/portfolio/static/media/vojtik.49666f966ad6a5451f6c.webp",
@@ -17,12 +18,12 @@
     "static/media/facebook.svg": "/portfolio/static/media/facebook.8b4fa8d52793fcd5cf5132271243b1c2.svg",
     "static/media/wipe.svg": "/portfolio/static/media/wipe.c5165e4efe77f9b376af9cc20ebe82d6.svg",
     "static/media/triangle.svg": "/portfolio/static/media/triangle.b35b400221bde155420ffdd101d5df45.svg",
-    "main.ddaf9128.css.map": "/portfolio/static/css/main.ddaf9128.css.map",
-    "main.8866f42c.js.map": "/portfolio/static/js/main.8866f42c.js.map",
+    "main.32d79c84.css.map": "/portfolio/static/css/main.32d79c84.css.map",
+    "main.364f72c5.js.map": "/portfolio/static/js/main.364f72c5.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddaf9128.css",
-    "static/js/main.8866f42c.js"
+    "static/css/main.32d79c84.css",
+    "static/js/main.364f72c5.js"
   ]
 }
